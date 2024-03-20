@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UMS", "UMS\UMS.vcxproj", "{5EF884A4-56A2-43F5-A711-0DE2D25AD075}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5EF884A4-56A2-43F5-A711-0DE2D25AD075}.Debug|x64.ActiveCfg = Debug|x64
+		{5EF884A4-56A2-43F5-A711-0DE2D25AD075}.Debug|x64.Build.0 = Debug|x64
+		{5EF884A4-56A2-43F5-A711-0DE2D25AD075}.Debug|x86.ActiveCfg = Debug|Win32
+		{5EF884A4-56A2-43F5-A711-0DE2D25AD075}.Debug|x86.Build.0 = Debug|Win32
+		{5EF884A4-56A2-43F5-A711-0DE2D25AD075}.Release|x64.ActiveCfg = Release|x64
+		{5EF884A4-56A2-43F5-A711-0DE2D25AD075}.Release|x64.Build.0 = Release|x64
+		{5EF884A4-56A2-43F5-A711-0DE2D25AD075}.Release|x86.ActiveCfg = Release|Win32
+		{5EF884A4-56A2-43F5-A711-0DE2D25AD075}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D4DC2C72-C240-4D10-8279-B621E9B7A83F}
+	EndGlobalSection
+EndGlobal
