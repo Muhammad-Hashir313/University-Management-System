@@ -1,6 +1,9 @@
 #include <iostream>
+#include <string>
 #include <vector>
 using namespace std;
+
+class Courses;
 
 class Student
 {
@@ -10,9 +13,33 @@ private:
     vector<Courses *> courseEnrolled;
 
 public:
-    void enrollCourse();
-    void dropCourse();
-    void viewCourse();
+    Student()
+    {
+        cout << "Enter Student ID: ";
+        cin >> studentId;
+        cout << "Enter Student Name: ";
+        getline(cin, name);
+        cin.ignore();
+        cout << "Enter Email Address: ";
+        cin >> email;
+    }
+
+    void enrollCourse(Courses *course)
+    {
+        courseEnrolled.push_back(course);
+    }
+
+    void dropCourse(Courses *course)
+    {
+        courseEnrolled.erase(find(courseEnrolled.begin(), courseEnrolled.end(), course));
+    }
+    void viewCourse()
+    {
+        for (int i = 0; i < courseEnrolled.size(); i++)
+        {
+            cout << courseEnrolled[i]->getCourseName() << endl;
+        }
+    }
 };
 
 class Teacher
@@ -37,12 +64,46 @@ private:
     Student *student;
 
 public:
-    void addStudent();
-    void removeStudent();
-    void viewStudent();
+    Courses()
+    {
+        cout << "Enter Course Code: ";
+        cin >> courseCode;
+        cout << "Enter Course Name: ";
+        getline(cin, courseName);
+        cin.ignore();
+    }
+
+    void addStudent(Student *student)
+    {
+        this->student = student;
+    }
+
+    void removeStudent(Student *student)
+    {
+        if (this->student == student)
+        {
+            this->student = NULL;
+        }
+        else
+        {
+            cout << "Student not found" << endl;
+        }
+    }
+
+    void viewStudent()
+    {
+        if (this->student == NULL)
+        {
+            cout << "No student enrolled" << endl;
+        }
+        else
+        {
+            cout << this->student->getName() << endl;
+        }
+    };
 };
 
-class Classes
+class Rooms
 {
 private:
     string roomNumber;
