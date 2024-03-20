@@ -17,9 +17,9 @@ public:
     {
         cout << "Enter Student ID: ";
         cin >> studentId;
+        cin.ignore();
         cout << "Enter Student Name: ";
         getline(cin, name);
-        cin.ignore();
         cout << "Enter Email Address: ";
         cin >> email;
     }
@@ -33,6 +33,8 @@ public:
     {
         courseEnrolled.erase(find(courseEnrolled.begin(), courseEnrolled.end(), course));
     }
+
+    string getName() const { return name; }
     void viewCourse()
     {
         for (int i = 0; i < courseEnrolled.size(); i++)
@@ -68,10 +70,12 @@ public:
     {
         cout << "Enter Course Code: ";
         cin >> courseCode;
+        cin.ignore();
         cout << "Enter Course Name: ";
         getline(cin, courseName);
-        cin.ignore();
     }
+
+    string getCourseName() const { return courseName; }
 
     void addStudent(Student *student)
     {
@@ -82,7 +86,8 @@ public:
     {
         if (this->student == student)
         {
-            this->student = NULL;
+            delete this->student;
+            this->student = nullptr;
         }
         else
         {
