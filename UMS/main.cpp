@@ -25,24 +25,11 @@ public:
         cin >> email;
     }
 
-    void enrollCourse(Courses *course)
-    {
-        courseEnrolled.push_back(course);
-    }
-
-    void dropCourse(Courses *course)
-    {
-        courseEnrolled.erase(find(courseEnrolled.begin(), courseEnrolled.end(), course));
-    }
+    void enrollCourse(Courses *course);
+    void dropCourse(Courses *course);
 
     string getName() const { return name; }
-    void viewCourse()
-    {
-        for (int i = 0; i < courseEnrolled.size(); i++)
-        {
-            cout << courseEnrolled[i]->getCourseName() << endl;
-        }
-    }
+    void viewCourse();
 };
 
 class Teacher
