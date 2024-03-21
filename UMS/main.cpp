@@ -108,16 +108,7 @@ public:
     };
 };
 
-class Rooms
-{
-private:
-    string roomNumber;
-    int roomCapacity;
 
-public:
-    void checkAvailability();
-    void bookRoom();
-};
 
 int main()
 {
