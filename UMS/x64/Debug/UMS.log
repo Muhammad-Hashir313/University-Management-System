@@ -1,0 +1,21 @@
+﻿  main.cpp
+C:\Users\M Tech\source\repos\University-Management-System\UMS\main.cpp(43,37): error C2027: use of undefined type 'Courses'
+C:\Users\M Tech\source\repos\University-Management-System\UMS\main.cpp(7,7): message : see declaration of 'Courses'
+C:\Users\M Tech\source\repos\University-Management-System\UMS\main.cpp(93,10): error C2084: function 'Student::Student(void)' already has a body
+C:\Users\M Tech\source\repos\University-Management-System\UMS\main.cpp(17,5): message : see previous definition of '{ctor}'
+C:\Users\M Tech\source\repos\University-Management-System\UMS\main.cpp(104,15): error C2084: function 'void Student::enrollCourse(Courses *)' already has a body
+C:\Users\M Tech\source\repos\University-Management-System\UMS\main.cpp(28,10): message : see previous definition of 'enrollCourse'
+C:\Users\M Tech\source\repos\University-Management-System\UMS\main.cpp(109,15): error C2084: function 'void Student::dropCourse(Courses *)' already has a body
+C:\Users\M Tech\source\repos\University-Management-System\UMS\main.cpp(33,10): message : see previous definition of 'dropCourse'
+C:\Users\M Tech\source\repos\University-Management-System\UMS\main.cpp(114,17): error C2084: function 'std::string Student::getName(void) const' already has a body
+C:\Users\M Tech\source\repos\University-Management-System\UMS\main.cpp(38,12): message : see previous definition of 'getName'
+C:\Users\M Tech\source\repos\University-Management-System\UMS\main.cpp(119,15): error C2084: function 'void Student::viewCourse(void)' already has a body
+C:\Users\M Tech\source\repos\University-Management-System\UMS\main.cpp(39,10): message : see previous definition of 'viewCourse'
+C:\Users\M Tech\source\repos\University-Management-System\UMS\main.cpp(184,31): error C2039: 'getCode': is not a member of 'Courses'
+C:\Users\M Tech\source\repos\University-Management-System\UMS\main.cpp(77,7): message : see declaration of 'Courses'
+C:\Users\M Tech\source\repos\University-Management-System\UMS\main.cpp(184,59): error C2039: 'getName': is not a member of 'Courses'
+C:\Users\M Tech\source\repos\University-Management-System\UMS\main.cpp(77,7): message : see declaration of 'Courses'
+C:\Users\M Tech\source\repos\University-Management-System\UMS\main.cpp(184,87): error C2039: 'getTeacher': is not a member of 'Courses'
+C:\Users\M Tech\source\repos\University-Management-System\UMS\main.cpp(77,7): message : see declaration of 'Courses'
+C:\Users\M Tech\source\repos\University-Management-System\UMS\main.cpp(185,24): error C2039: 'getMaxCapacity': is not a member of 'Courses'
+C:\Users\M Tech\source\repos\University-Management-System\UMS\main.cpp(77,7): message : see declaration of 'Courses'
